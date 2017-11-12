@@ -1,9 +1,16 @@
 #include <Arduino.h>
 
+extern void initialDelay();
+extern void initialBlinks();
+extern void blinkLoop(int, int, int, int);
+extern void constantBlinking();
+
 void setup() {
-    // put your setup code here, to run once:
+    pinMode(LED_BUILTIN, OUTPUT);
+    
+    initialBlinks();
 }
 
 void loop() {
-    // put your main code here, to run repeatedly:
+    constantBlinking();
 }
