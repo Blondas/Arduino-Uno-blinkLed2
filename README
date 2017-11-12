@@ -1,3 +1,7 @@
 This is very simple program for Arduino Uno. The aim is to :
 - blink the led on a board 3 times when program starts 
 - and then blink 2 times every 2 seconds 
+
+This project is based on: https://www.arduino.cc/en/Tutorial/Blink
+
+Written for ArduinoUno
