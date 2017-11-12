@@ -1,9 +1,5 @@
 #include <Arduino.h>
-
-void initialDelay();
-void initialBlinks();
-void blinkLoop(int, int, int, int);
-void constantBlinking();
+#include <Led.h>
 
 void blinkLoop(int inOutPin, int highTime, int lowTime, int howMany) {
     for (int i=0; i < howMany; ++i) {
@@ -26,4 +22,4 @@ void constantBlinking() {
 
 void initialDelay() {
     delay(2000);
-};
+}
