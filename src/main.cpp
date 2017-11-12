@@ -8,7 +8,6 @@ extern void constantBlinking();
 
 void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
-    
     initialBlinks();
 }
 
