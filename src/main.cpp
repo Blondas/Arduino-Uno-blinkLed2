@@ -2,16 +2,18 @@
 #include <Led.h>
 
 extern void initialDelay();
-extern void initialBlinks();
-extern void blinkLoop(int, int, int, int);
-extern void constantBlinking();
 
 void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
-    
+    initialDelay();
     initialBlinks();
 }
 
 void loop() {
-    constantBlinking();
+    int interval = 1000;
+    constantBlinking(interval);
+}
+
+void initialDelay() {
+    delay(2000);
 }
